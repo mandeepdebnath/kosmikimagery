@@ -8,7 +8,7 @@ async function renderData(data) {
   let html = `<div class="card p-3">
     <h2>${data.title}</h2>
     <h5><i>Courtesy: NASA</i></h5>
-    <img src=${data.url} alt=${data.title} class="img mb-3">
+    <img src=${data.hdurl} alt=${data.title} loading="lazy" class="img mb-3">
     <h5><i>Copyright: ${data.copyright}</i></h5>
     <h5>Date: ${data.date}</h5>
     <p class="mb-0">Explanation: ${data.explanation}</p>
