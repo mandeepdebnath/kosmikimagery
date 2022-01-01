@@ -1,6 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --step--2: clamp(1.04rem, 0.89rem + 0.78vw, 1.44rem);
+  --step--1: clamp(1.25rem, 1.04rem + 1.07vw, 1.8rem);
+  --step-0: clamp(1.5rem, 1.21rem + 1.46vw, 2.25rem);
+  --step-1: clamp(1.8rem, 1.4rem + 1.98vw, 2.81rem);
+  --step-2: clamp(2.16rem, 1.63rem + 2.65vw, 2.52rem);
+  --step-3: clamp(2.59rem, 1.89rem + 3.52vw, 4.39rem);
+  --step-4: clamp(3.11rem, 2.18rem + 4.65vw, 5.49rem);
+  --step-5: clamp(3.73rem, 2.51rem + 6.11vw, 6.87rem);
+}
+
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #000;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  background: linear-gradient(
+      0deg,
+      rgb(0, 0, 0, 1) 5%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    url("bg.jpg");
+  color: #fff;
+  min-height: 100vh;
+  object-fit: cover;
+}
+
+.logo h1 {
+  font-weight: 900;
+}
+
+.header-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.header-body h2 {
+  font-size: var(--step-2);
+  max-width: 850px;
+  text-transform: uppercase;
+  line-height: 1;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  header .header-body {
+    padding: 100px;
+  }
 }
 
 .card img {
@@ -10,4 +69,26 @@
 .card h5 {
   font-weight: 300;
   font-size: 1rem;
+}
+
+.layered-card {
+  position: relative;
+}
+
+.card::before {
+  background: rgba(197, 120, 120, 0.3);
+  content: "";
+
+  /* Position */
+  top: 0;
+  left: 0;
+  position: absolute;
+  transform: translate(1rem, 1rem);
+
+  /* Size */
+  height: 100%;
+  width: 100%;
+
+  /* Display under the main content */
+  z-index: -1;
 }

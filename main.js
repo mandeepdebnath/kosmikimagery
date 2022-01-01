@@ -5,7 +5,7 @@ const card = document.querySelector(".wrapper");
 let data = {};
 
 async function renderData(data) {
-  let html = `<div class="card border p-3">
+  let html = `<div class="card p-3">
     <h2>${data.title}</h2>
     <h5><i>Courtesy: NASA</i></h5>
     <img src=${data.url} alt=${data.title} class="img mb-3">
