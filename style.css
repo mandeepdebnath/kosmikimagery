@@ -100,13 +100,14 @@ button {
   font-size: 1rem;
 }
 
+@media (max-width: 500px) {
+  .card h5 {
+    font-size: 0.8rem;
+  }
+}
 @media (min-width: 768px) {
   header .header-body {
     padding: 100px;
-  }
-
-  .card h5 {
-    font-size: 0.8rem;
   }
 
   .logo {
