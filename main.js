@@ -11,7 +11,7 @@ async function renderData(data) {
     <img src=${data.url} alt=${data.title} class="img mb-3">
     <h5><i>Copyright: ${data.copyright}</i></h5>
     <h5>Date: ${data.date}</h5>
-    <p class="mb-0">${data.explanation}</p>
+    <p class="mb-0">Explanation: ${data.explanation}</p>
     </div>`;
 
   card.innerHTML = html;
