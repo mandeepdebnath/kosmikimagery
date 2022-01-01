@@ -37,8 +37,18 @@ header {
   object-fit: cover;
 }
 
+.logo {
+  height: 10vh;
+}
 .logo h1 {
-  font-weight: 900;
+  font-weight: 200;
+}
+
+button {
+  border: none;
+  padding: 8px 15px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .header-body {
@@ -46,6 +56,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: start;
+  height: 60vh;
 }
 
 .header-body h2 {
@@ -56,10 +67,8 @@ header {
   font-weight: 700;
 }
 
-@media (min-width: 768px) {
-  header .header-body {
-    padding: 100px;
-  }
+.card-container h1 {
+  color: #fff;
 }
 
 .card img {
@@ -71,24 +80,8 @@ header {
   font-size: 1rem;
 }
 
-.layered-card {
-  position: relative;
-}
-
-.card::before {
-  background: rgba(197, 120, 120, 0.3);
-  content: "";
-
-  /* Position */
-  top: 0;
-  left: 0;
-  position: absolute;
-  transform: translate(1rem, 1rem);
-
-  /* Size */
-  height: 100%;
-  width: 100%;
-
-  /* Display under the main content */
-  z-index: -1;
+@media (min-width: 768px) {
+  header .header-body {
+    padding: 100px;
+  }
 }
