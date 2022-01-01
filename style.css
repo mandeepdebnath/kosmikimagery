@@ -55,6 +55,7 @@ header {
 .logo h1 {
   font-weight: 200;
   height: 8vh;
+  letter-spacing: 2.5px;
 }
 
 button {
