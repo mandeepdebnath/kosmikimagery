@@ -48,7 +48,7 @@ header {
     ),
     url("bg.jpg");
   color: #adefd1ff;
-  /* min-height: 100vh; */
+  min-height: 100vh;
   object-fit: cover;
 }
 
@@ -69,7 +69,6 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  margin: 50px auto;
 }
 
 .header-body h2 {
