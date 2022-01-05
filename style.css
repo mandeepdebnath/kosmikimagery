@@ -16,6 +16,14 @@
   padding: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-bottom: 0 !important;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background: #101820ff;
@@ -56,6 +64,7 @@ header {
   font-weight: 200;
   height: 8vh;
   letter-spacing: 2.5px;
+  cursor: pointer;
 }
 
 button {
@@ -84,18 +93,33 @@ button {
 
 .card-container h1 {
   color: #adefd1ff;
+  font-weight: 800;
 }
 
 .wrapper .card {
-  background: #eeeeee;
+  background: transparent;
   color: #101820ff;
 }
 
-.card img {
+.pic-card .card-el {
+  background: #eeeeee;
+  color: #101820ff;
+  padding: 20px 10px;
+  border-radius: 8px;
+  box-shadow: 0 10px 2px 0 #000;
+  text-align: center;
+}
+
+.pic-card h2 {
+  font-weight: 700;
+}
+.pic-card img {
   width: 100%;
   object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 0 5px 5px #000;
 }
-.card h5 {
+.pic-card h5 {
   font-weight: 300;
   font-size: 1rem;
 }

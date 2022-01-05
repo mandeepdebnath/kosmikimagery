@@ -5,13 +5,20 @@ const card = document.querySelector(".wrapper");
 let data = {};
 
 async function renderData(data) {
-  let html = `<div class="card p-3">
-    <h2>${data.title}</h2>
-    <h5><i>Courtesy: NASA</i></h5>
-    <img src=${data.hdurl} alt=${data.title} loading="lazy" class="img mb-3">
-    <h5><i>Copyright: ${data.copyright}</i></h5>
-    <h5>Date: ${data.date}</h5>
+  let html = `<div class="pic-card p-3">
+  <div class="card-el mb-4">
+  
+  <h2>${data.title}</h2>
+  <h5><i>Copyright: ${data.copyright}</i></h5>
+  </div>
+
+    <img src=${data.hdurl} alt=${data.title} loading="lazy" class="img mb-4">
+
+    <div class="card-el mb-4">
+ 
+    <h5 class="mb-2">Date: ${data.date}</h5>
     <p class="mb-0">Explanation: ${data.explanation}</p>
+    </div>
     </div>`;
 
   card.innerHTML = html;
