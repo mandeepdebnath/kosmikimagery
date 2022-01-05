@@ -48,7 +48,7 @@ a:hover {
   color: #101820ff;
 }
 
-header {
+.header {
   background: linear-gradient(
       0deg,
       rgb(30, 42, 54) 5%,
@@ -56,8 +56,10 @@ header {
     ),
     url("bg.jpg");
   color: #adefd1ff;
-  min-height: 100vh;
   object-fit: cover;
+}
+header {
+  min-height: 100vh;
 }
 
 .logo h1 {
