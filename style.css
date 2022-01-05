@@ -26,7 +26,7 @@ h5 {
 
 body {
   font-family: "Poppins", sans-serif;
-  background: #101820ff;
+  background: rgb(30, 42, 54);
 }
 
 html {
@@ -51,7 +51,7 @@ footer {
 header {
   background: linear-gradient(
       0deg,
-      rgba(16, 24, 32, 1) 5%,
+      rgb(30, 42, 54) 5%,
       rgba(255, 255, 255, 0) 100%
     ),
     url("bg.jpg");
@@ -93,7 +93,7 @@ button {
 
 .card-container h1 {
   color: #adefd1ff;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .wrapper .card {
@@ -125,7 +125,7 @@ button {
 }
 
 @media (max-width: 500px) {
-  .card h5 {
+  .pic-card h5 {
     font-size: 0.8rem;
   }
 }
