@@ -17,7 +17,7 @@ async function renderData(data) {
     <div class="card-el mb-4">
  
     <h5 class="mb-2">Date: ${data.date}</h5>
-    <p class="mb-0">Explanation: ${data.explanation}</p>
+    <p class="mb-0">${data.explanation}</p>
     </div>
     </div>`;
 
