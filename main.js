@@ -1,3 +1,8 @@
+/**
+ *
+ * @param {Date} dateObject
+ */
+
 url =
   "https://api.nasa.gov/planetary/apod?api_key=yVvbu3sZGFcknM4DgxMDdFhgnN9tfyh3YEOROveA";
 
@@ -25,7 +30,7 @@ async function renderData(data) {
 }
 
 //fetching data from API
-async function fetchAPI() {
+async function fetchTodayData() {
   try {
     let res = await fetch(url);
     data = await res.json();
@@ -36,4 +41,4 @@ async function fetchAPI() {
   }
 }
 
-fetchAPI();
+fetchTodayData();
