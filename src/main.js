@@ -17,7 +17,7 @@ async function renderData(data) {
   <h5><i>Copyright: ${data.copyright}</i></h5>
   </div>
 
-    <img src=${data.hdurl} alt=${data.title} loading="lazy" class="img mb-4">
+    <img src=${data.url} alt=${data.title} loading="lazy" class="img mb-4">
 
     <div class="card-el mb-4">
  
