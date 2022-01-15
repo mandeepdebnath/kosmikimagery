@@ -34,7 +34,7 @@ async function renderData(data) {
     <h2>${data.title}</h2>
     <h5><i>Copyright: ${data.copyright}</i></h5>
     </div>
-      <img src=${data.hdurl} alt=${data.title} loading="lazy" class="img mb-4">
+      <img src=${data.url} alt=${data.title} loading="lazy" class="img mb-4">
       <div class="card-el mb-4">
       <h5 class="mb-2">Date: ${data.date}</h5>
       <p class="mb-0">${data.explanation}</p>
